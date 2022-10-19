@@ -11,6 +11,7 @@
 		FDB25EBB28FEEC3400B3C142 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB25EBA28FEEC3400B3C142 /* ContentView.swift */; };
 		FDB25EBD28FEEC3500B3C142 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDB25EBC28FEEC3500B3C142 /* Assets.xcassets */; };
 		FDB25EC128FEEC3500B3C142 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDB25EC028FEEC3500B3C142 /* Preview Assets.xcassets */; };
+		FDB25EC828FEEFDD00B3C142 /* ThreadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB25EC728FEEFDD00B3C142 /* ThreadVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		FDB25EBC28FEEC3500B3C142 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDB25EBE28FEEC3500B3C142 /* fewThreads.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = fewThreads.entitlements; sourceTree = "<group>"; };
 		FDB25EC028FEEC3500B3C142 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FDB25EC728FEEFDD00B3C142 /* ThreadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				FDB25EBC28FEEC3500B3C142 /* Assets.xcassets */,
 				FDB25EBE28FEEC3500B3C142 /* fewThreads.entitlements */,
 				FDB25EBF28FEEC3500B3C142 /* Preview Content */,
+				FDB25EC728FEEFDD00B3C142 /* ThreadVC.swift */,
 			);
 			path = fewThreads;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDB25EC828FEEFDD00B3C142 /* ThreadVC.swift in Sources */,
 				FDB25EBB28FEEC3400B3C142 /* ContentView.swift in Sources */,
 				FDB25EB928FEEC3400B3C142 /* fewThreadsApp.swift in Sources */,
 			);
@@ -285,7 +289,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.fewThreads;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -321,7 +327,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.fewThreads;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -9,13 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        Threads()
     }
 }
 
@@ -24,3 +18,16 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+struct Threads: UIViewControllerRepresentable {
+
+    func makeUIViewController(context: Context) -> ThreadVC {
+        return ThreadVC()
+    }
+    
+    func updateUIViewController(_ uiViewController: ThreadVC, context: Context) {
+        
+    }
+}
+
+
