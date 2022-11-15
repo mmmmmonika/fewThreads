@@ -35,7 +35,7 @@ class ThreadVC: UIViewController {
                 for _ in 0..<self!.iterationCount {
                     let time = UInt32.random(in: 0...1000)
                     let threadId = Thread.current
-                    sleep(time / 100)
+                    sleep(time / 1000)
                     
                     DispatchQueue.main.async { [weak self] in
                         self?.updateText(newText: String("\(threadId):\(time)\n"))
